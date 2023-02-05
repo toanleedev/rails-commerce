@@ -1,0 +1,19 @@
+en:
+  welcome: Hello world
+  date:
+    formats:
+      default: '%Y-%m-%d'
+      long: '%d %b, %Y'
+      short: '%d %b'
+  time:
+    formats:
+      default: '%d/%m/%Y %H:%M'
+      long: '%d/%m/%Y %H:%M'
+      short: '%d %b %H:%M'
+  activerecord:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        name: 'Name'
+        email: 'Email'
