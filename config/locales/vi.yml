@@ -15,5 +15,13 @@ vi:
       user: 'User'
     attributes:
       user:
-        name: 'Name'
-        email: 'Email'
+        full_name: Họ tên
+        email: E-mail
+        password: Mật khẩu
+        password_confirmation: Xác nhận mật khẩu
+        birth: Ngày sinh
+        gender: Giới tính
+        phone: Số điện thoại
+    help:
+      user:
+        password: Mật khẩu độ dài tối thiểu sáu ký tự

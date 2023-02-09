@@ -15,5 +15,9 @@ en:
       user: 'User'
     attributes:
       user:
-        name: 'Name'
-        email: 'Email'
+        full_name: Name
+        email: Email
+        password: Password
+    help:
+      user:
+        password: A good password should be at least six characters long

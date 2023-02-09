@@ -9,5 +9,7 @@ html
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
   body class="#{params[:controller]}##{params[:action]}"
-    = yield
-    h1 alo
+    = render 'layouts/header'
+    main.main
+      = yield
+    = render 'layouts/footer'

@@ -25,5 +25,13 @@ module AppDemo
 
     config.encoding = 'utf-8'
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    #to skip assets, scaffolds.css, test framework, helpers, view
+    config.generators do |g|
+      g.test_framework  nil #to skip test framework
+      g.template_engine :slim
+      g.assets  false
+      g.helper false
+      g.stylesheets false
+    end
   end
 end
