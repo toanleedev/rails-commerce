@@ -50,7 +50,7 @@ gem "sassc-rails"
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
-gem 'slim-rails', '~> 3.5.1'
+gem 'slim', '~> 4.1.0'
 
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 6.0.0'
@@ -60,7 +60,7 @@ gem 'rails-i18n', '~> 7.0.5'
 # use ENV
 gem 'figaro', '~> 1.2.0'
 
-gem 'rubocop-rails', '~> 2.16.1'
+gem 'rubocop'
 
 gem 'bootstrap', '~> 5.2.2'
 

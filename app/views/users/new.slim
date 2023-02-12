@@ -2,9 +2,9 @@
   .row
     .col-md-6.offset-md-3.bg-light.mt-sm-3.p-3.rounded.shadow
       h4.mb-3 Đăng Ký
-      = bootstrap_form_for(@user, url: sign_up_path) do |f|
+      = bootstrap_form_with(model: @user, url: sign_up_path) do |f|
         = f.text_field :full_name, floating: true
         = f.email_field :email, floating: true
         = f.password_field :password, floating: true
         = f.password_field :password_confirmation, floating: true
-        = f.primary "Đăng ký", extra_class: 'w-100 col-md-6'
+        = f.primary "Đăng ký", extra_class: 'w-100 col-md-6', data: {turbo: false}

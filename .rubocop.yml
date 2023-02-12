@@ -11,3 +11,8 @@ Metrics/AbcSize:
 
 Metrics/MethodLength:
   Max: 50
+AllCops:
+  EnabledByDefault: true
+
+Lint/ConstantResolution:
+  Enabled: false
