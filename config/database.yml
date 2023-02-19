@@ -22,4 +22,9 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  port: <%= ENV['PROC_DATABASE_PORT'] %>
+  host: <%= ENV['PROC_DATABASE_HOST'] %>
+  database: <%= ENV['PROC_DATABASE_NAME'] %>
+  username: <%= ENV["PROC_DATABASE_USERNAME"] %>
+  password: <%= ENV["PROC_DATABASE_PASSWORD"] %>
