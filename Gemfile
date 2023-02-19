@@ -60,7 +60,7 @@ gem 'rails-i18n', '~> 7.0.5'
 # use ENV
 gem 'figaro', '~> 1.2.0'
 
-gem 'rubocop'
+gem 'rubocop', '~> 1.36.0'
 
 gem 'bootstrap', '~> 5.2.2'
 

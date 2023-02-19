@@ -33,5 +33,7 @@ module AppDemo
       g.helper false
       g.stylesheets false
     end
+
+    config.active_record.sqlite3_production_warning=false
   end
 end
