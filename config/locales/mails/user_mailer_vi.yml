@@ -1,0 +1,7 @@
+vi:
+  user_mailer:
+    confirmation_user_mail:
+      confirmation_user: Xác nhận tài khoản
+      dear: 'Chào <b>%{name}</b>,'
+      confirm_text: Bạn có thể xác nhận email tài khoản của mình thông qua liên kết bên dưới
+      click_here: Xác nhận ngay

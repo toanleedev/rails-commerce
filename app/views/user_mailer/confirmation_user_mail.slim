@@ -1,0 +1,4 @@
+p = raw t('.dear', name: @user.full_name)
+p = t('.confirm_text')
+= link_to t('.click_here'),
+  confirmation_users_url(token: @user.confirmation_token, email: @user.email), target: "_blank"

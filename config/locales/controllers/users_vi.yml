@@ -1,0 +1,8 @@
+vi:
+  users:
+    create:
+      register_success: 'Một email chứa đường dẫn xác nhận tài khoản đã được gửi cho bạn. Bạn vui lòng kiểm tra email.'
+    confirmation:
+      confirmation_success: Xác nhận tài khoản thành công! Bạn hiện đang đăng nhập.
+      confirmation_failure: Xác nhận tài khoản thất bại.
+      already_comfirmed: Tài khoản đã được xác minh.

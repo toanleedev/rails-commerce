@@ -1,0 +1,15 @@
+vi:
+  sessions:
+    new:
+      login: Đăng nhập
+      already_login: Tài khoản đã đăng nhập
+      email: E-mail
+      password: Mật khẩu
+      remember_me: Lưu mật khẩu
+      forgot_password: Quên mật khẩu
+    create:
+      email_does_not_exist: Email không tồn tại.
+      incorrect_password: Sai mật khẩu
+      login_successfully: Đăng nhập thành công.
+    destroy:
+      logout_successfully: Bạn đã đăng xuất.

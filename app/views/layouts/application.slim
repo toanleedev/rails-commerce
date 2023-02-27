@@ -4,6 +4,8 @@ html
     meta content=("text/html; charset=UTF-8") http-equiv="Content-Type" 
     title E-commerce
     meta[name="viewport" content="width=device-width,initial-scale=1"]
+    link[rel="icon" type="image/x-icon" href="/favicon.ico"]
+    = favicon_link_tag asset_path('Home.ico')
     = csrf_meta_tags
     = csp_meta_tag
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
@@ -12,4 +14,5 @@ html
     = render 'layouts/header'
     main.main
       = yield
+      = toastr_flash
     = render 'layouts/footer'

@@ -5,6 +5,18 @@ header.header
       button.navbar-toggler[type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"]
         span.navbar-toggler-icon
       #navbarNavAltMarkup.collapse.navbar-collapse
-        .navbar-nav.ms-auto.mt-2.mt-lg-0.gap-2
-          = link_to 'Sign in', sign_in_path, class: 'btn btn-sm btn-primary ms-lg-auto'
-          = link_to 'Sign up', sign_up_path, class: 'btn btn-sm btn-outline-primary'
+        ul.navbar-nav.ms-auto.mt-2.mt-lg-0.gap-2
+          - if current_user.present?
+            .nav-item.dropdown
+              a#navbar_user_info.nav-link.dropdown-toggle[href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"]
+                = current_user.full_name
+              ul.dropdown-menu.dropdown-menu-end[aria-labelledby="navbar_user_info"]
+                li
+                  = link_to 'Tài khoản', root_path, class: 'dropdown-item'
+                li
+                  hr.dropdown-divider
+                li
+                  = link_to 'Logout', logout_path, method: "delete", class: 'dropdown-item'
+          - else
+            = link_to 'Sign in', sign_in_path, class: 'btn btn-sm btn-primary'
+            = link_to 'Sign up', sign_up_path, class: 'btn btn-sm btn-outline-primary'

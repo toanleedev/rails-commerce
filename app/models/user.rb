@@ -25,4 +25,14 @@ class User < ApplicationRecord
   has_secure_password
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
   validates :full_name, presence: true
+  before_create :generate_token
+  before_save { self.email = email.downcase }
+
+  protected
+
+  def generate_token
+    self.confirmation_token = SecureRandom.urlsafe_base64
+    self.confirmation_sent_at = Time.current
+    generate_token if User.exists?(confirmation_token: self.confirmation_token)
+  end
 end
